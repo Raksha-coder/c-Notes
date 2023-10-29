@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "SGO/AToUhjJ2kB9jPA1geJzIgGRf2Rw7vPbC1UyzkEwPYsP73bGywYwlX91b4igZ0xSgAkDwVoIRA3SnwxXedg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\HP\\OneDrive\\Desktop\\practice c# at home\\Dependency Injection\\Dependency Injection.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\HP\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.9\\microsoft.aspnetcore.app.ref.6.0.9.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.9\\microsoft.windowsdesktop.app.ref.6.0.9.nupkg.sha512"
+  ],
+  "logs": []
+}
