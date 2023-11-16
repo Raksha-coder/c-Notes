@@ -5,6 +5,41 @@ ctrl + r = to select multiple word and edit them.
 
 
 
+🤩readonly and constant
+- ReadOnly is a runtime constant.
+- Const is a compile time constant.
+- The value of readonly field can be changed.
+- The value of the const field can not be changed.
+- readonly cannot be declared inside the method.
+- const can be declared inside the method.
+- In readonly fields, we can assign values in declaration and in the constructor part.
+- In const fields, we can only assign values in declaration part.
+- const is static
+
+
+{
+using System;
+
+public class HelloWorld
+{
+    public const string one = "hellooo";
+    
+    public static readonly string two = "hanjiii";
+    // static is complsory to access this in main because readonly is not static
+    //we can also make class as readonly
+    //public readonly Person personOne = new Person("A","B");
+    
+    public static void Main(string[] args)
+    {
+        Console.WriteLine(one);
+          Console.WriteLine(two);
+        	  	
+    }
+}
+
+}
+
+
 
 🤩 Binary Literals and Digit Separators in C#
 
