@@ -1,5 +1,51 @@
 # c# Notes
 
+🤩🤩 All Shortcuts of Visual Studio
+ctrl + r = to select multiple word and edit them.
+
+🤩Exception handling 
+
+string mynum = Console.ReadLine();   // "abcd" = false : not converted to int
+
+int convertedtoInt;
+bool ans = int.TryParse(mynum, out convertedtoInt);
+if(!ans){   //if the conversion fails
+	throw new Exception("conversion is unsuccessful");
+ 			//it(Exception("some")) is the constructor .
+}
+
+note : exception is actually a class which we use to made our custom exception. the above is the unhandled exception , so we will use try,catch.
+
+
+
+🤩TRY CATCH FINALLY
+
+try{
+
+	string mynum = Console.ReadLine();   // "abcd" = false : not converted to int
+
+	int convertedtoInt;
+	bool ans = int.TryParse(mynum, out convertedtoInt);
+	if(!ans){   //if the conversion fails
+		throw new Exception("conversion is unsuccessful");
+	 			//it(Exception("some")) is the constructor .
+	}
+}catch(Exception ex){
+
+	Console.WriteLine("There is an Exception : {0}",ex.Message);
+
+}
+//console.WriteLine("the rest of the application will still runs");
+finally{
+
+ 	console.WriteLine("the rest of the application will still runs");
+
+}
+
+note : if we do not use try catch , then the last console.writeLine() will not execute or the rest of the application will get crash. 
+- finally will run the rest of the code whethere it will get the error or not.
+
+
 🤩 string builder
 - strings are immutable(unchangable), if we create another string , it will be created on heap(new memory location),so add,remove is difficult . to solve this problem we have stringBuilder , it is a dynamic Object . if we add, remove or moade some changes in the string , it will refer to the same location .
 
