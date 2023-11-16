@@ -1,5 +1,77 @@
 # c# Notes
 
+
+🤩String Manipulation,Formatting.
+
+1) Equals = return the type of bool
+-- In C#, Equals(String, String) is a String method. It is used to determine whether two String objects have the same value or not. Basically, it checks for equality. If both strings have the same value, it returns true otherwise returns false.
+
+   
+string one = "sometext";
+string two = "sometext";
+bool isEqual = one.Equals(two);   
+bool isEqual = one.Equals(two,StringComparison.Ordinal);    // (i == I) false
+bool isEqual = one.Equals(two,StringComparison.OrdinalIgnoreCase); // it will ignore the (i == I) is true here;
+
+
+Input:          string str1 = "ProGeek 2.0";
+                string str2 = "ProGeek 2.0";
+                string.Equals(str1, str2)
+Output:         True
+
+Input:          string str3 = "GFG";
+                string str4 = "others";
+                string.Equals(str3, str4)
+Output: 	False
+
+
+
+Note : Equals(String, StringComparison)
+- A parameter specifies the culture, case, and sort rules used in the comparison.
+- we have two more optons in place of second parameter like StringComparison.CurrentCulture , StringComparison.InvariantCulture.
+
+2) Concate strings
+
+string firstname = "Raksha";
+string lastname = "jaiswal";
+string Formatted = string.Format("{0} {1} some text here ",firstname, lastname);
+console.WriteLine(Formatted);
+
+3)string Length and index and substring(part of string)
+
+string firstname = "Raksha";
+console.WriteLine(firstname.Length); length start from 1
+console.WriteLine(firstname[0]);     index start from 0
+
+
+string sometext = "hello i am Raksha";
+console.WriteLine(sometext.Substring(11,6) );      
+o/p : Raksha
+//substring(startindex,length);
+
+
+note : string have length and indexes.
+
+4) ToLower() and ToUpper()
+string firstname = "Raksha";
+console.WriteLine(firstname.ToLower() );
+console.WriteLine(firstname.ToUpper() );
+
+5) string.Empty
+
+string one= "";
+string one = string.Empty;
+
+6) string Replace()
+
+string one = "One is the zerooo";
+console.WriteLine(one.Replace("zerooo","best"));
+ //     oldsubstring, newsubstring
+
+
+
+
+
 🤩Methods to convert String into int
 - Basically there are 3 methods and TryParse is the best method to use.
 - int.Parse(), int.TryParse(), and Convert.ToInt32() methods.
