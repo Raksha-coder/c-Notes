@@ -3,6 +3,23 @@
 🤩🤩 All Shortcuts of Visual Studio
 ctrl + r = to select multiple word and edit them.
 
+
+
+
+🤩 Binary Literals and Digit Separators in C#
+
+byte bytenum = 0b111 ;
+Console.WriteLine(Convert.ToInt16(0b111));
+o/p : 7
+
+note : 0b111 = 1*4+ 1*2 + 1*1 (2 to the power 0) = 7
+
+long num = 100_122_837_900;
+Console.WriteLine(num);
+o/p : 100122837900
+
+
+
 🤩Exception handling 
 
 string mynum = Console.ReadLine();   // "abcd" = false : not converted to int
