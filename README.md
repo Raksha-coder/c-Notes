@@ -49,7 +49,7 @@ note : https://www.tutorialsteacher.com/csharp/csharp-exception-handling , https
 
 
 
-->>>> A when exception filter :
+->->->-> A when exception filter :
 try
 {
     var result = Process(-3, 4);
