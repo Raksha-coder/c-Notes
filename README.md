@@ -44,6 +44,25 @@ finally{
 
 note : if we do not use try catch , then the last console.writeLine() will not execute or the rest of the application will get crash. 
 - finally will run the rest of the code whethere it will get the error or not.
+note : https://www.tutorialsteacher.com/csharp/csharp-exception-handling , https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/statements/exception-handling-statements  for more documentation.
+
+
+
+
+->>>> A when exception filter :
+try
+{
+    var result = Process(-3, 4);
+    Console.WriteLine($"Processing succeeded: {result}");
+}
+catch (Exception e) when (e is ArgumentException || e is DivideByZeroException)
+{
+    Console.WriteLine($"Processing failed: {e.Message}");
+}
+
+
+
+
 
 
 🤩 string builder
