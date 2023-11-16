@@ -49,7 +49,7 @@ note : https://www.tutorialsteacher.com/csharp/csharp-exception-handling , https
 
 
 
-->->->-> A when exception filter :
+-> A when exception filter :
 try
 {
     var result = Process(-3, 4);
@@ -436,6 +436,7 @@ Note : https://www.tutorialsteacher.com/csharp/csharp-list
 
 
 🤩 Array Methods
+
 1)sort
 
 int[] nums = {8,3,1,5,2,7,0};
