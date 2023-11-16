@@ -1,5 +1,16 @@
 # c# Notes
 
+🤩 string builder
+- strings are immutable(unchangable), if we create another string , it will be created on heap(new memory location),so add,remove is difficult . to solve this problem we have stringBuilder , it is a dynamic Object . if we add, remove or moade some changes in the string , it will refer to the same location .
+
+StringBuilder FullName = new StringBuilder();
+FullName.Append("Raksha");
+FullName.Append(" ");
+FullName.Append("Jaiswal");
+
+-  it will improve the performance.
+
+
 
 🤩String Manipulation,Formatting.
 
