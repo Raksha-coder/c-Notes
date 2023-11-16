@@ -61,6 +61,23 @@ catch (Exception e) when (e is ArgumentException || e is DivideByZeroException)
 }
 
 
+🤩 Throw expression in ternary( (condition)? : ) operator and coalescen operator (??)
+
+1)
+public double ConvertToDouble(string Inputtext){
+
+
+      return double.TryParse(Inputtext, out double converted)? converted : throw new Exception("expected a numeric value");
+                          //my input value which i want to convert into double, created one double variable (converted).
+}
+
+2)
+
+var takestring = Console.ReadLine() ?? string.Empty ;
+var takestring = Console.ReadLine() ?? throw new Exception("some text here") ;
+// if user didn't give the string take string as empty.
+   
+
 
 
 
