@@ -422,8 +422,24 @@ app.Run();
      */
 
 
+🤩List datatype in c#.
+- List is not of fixed size as array.
+- List is strongly type means we have to define the datatype of list<int> , list<string> , List<datatype>
+- Add,Remove,AddRange,RemoveAt,Count etc are methods of List.
+- it comes under System.Collections.Generic namespace.
+- List is define from array , so the array is work behind list and list expand the size of array.
+  
+List<int> nums = new List<int>();		
+var nums = new List<int>();
+
+Note : https://www.tutorialsteacher.com/csharp/csharp-list
 
 
+🤩 Array Methods
+1)sort
+
+int[] nums = {8,3,1,5,2,7,0};
+Array.Sort(nums);
 
      
     
