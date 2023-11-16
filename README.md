@@ -1,5 +1,45 @@
 # c# Notes
 
+🤩Methods to convert String into int
+- Basically there are 3 methods and TryParse is the best method to use.
+- int.Parse(), int.TryParse(), and Convert.ToInt32() methods.
+
+#Method1:
+string numberString = “8”;
+int i = int.Parse(numberString); 
+Console.WriteLine("Value of i: {0}", i);
+
+disadvantage : The downside of using the int.Parse() method is that an exception will be thrown if it cannot be successfully parsed to an integer. To avoid this issue, you can use a try-catch block while using int.Parse().
+
+#Method2:
+string numString = "123";
+int num = Convert.ToInt32(numString);
+
+Convert.ToInt32() is a static method provided by C# to convert a string to a 32-bit signed integer. This method takes a string variable as input and returns an integer.
+
+disadvantage : this method has two exceptions, FormatException and OverflowException and is able to convert a null variable to 0 without throwing an exception.
+
+#Method3:
+Compared to the int.Parse() method, int.TryParse() is a safer way to convert a string to a 32-bit signed integer.This method takes in a string variable and an out parameter and returns a bool of value true if the parsing is successful. The result of the parsing is stored in an out parameter.
+string numString = "12";
+
+if (int.TryParse(numString, out int num))
+{
+	// Conversion successful, do something with num.
+    Console.WriteLine("Successful");
+    Console.WriteLine(num);
+}
+else
+{
+	// Conversion failed, handle the error.
+    Console.WriteLine("Unsuccessful..");
+}
+note here : if the coversion fails then it return zero(0) or use input some letter instead of "123" then it will return zero.
+
+
+
+
+
 
 🤩Dependency Injection 
 
