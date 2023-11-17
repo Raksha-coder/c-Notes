@@ -526,5 +526,77 @@ Note : https://www.tutorialsteacher.com/csharp/csharp-list
 int[] nums = {8,3,1,5,2,7,0};
 Array.Sort(nums);
 
+
+🤩 Jagged Array
+
+- Jagged array is a array of arrays such that member arrays can be of different sizes. In other words, the length of each array index can differ. The elements of Jagged Array are reference types and initialized to null by default. Jagged Array can also be mixed with multidimensional arrays. Here, the number of rows will be fixed at the declaration time, but you can vary the number of columns.
+  
+- syntax : data_type[][] name_of_array = new data_type[rows][]   (only provide row numbers)
+
+//rows = 4
+int[][] jagged_arr = new int[4][]
+
+//columns
+jagged_arr[0] = new int[2];
+jagged_arr[1] = new int[4];
+jagged_arr[2] = new int[6];
+jagged_arr[3] = new int[7];
+
+// or we can write above statement as follows
+
+int[][] jagged_arr = new int[][] 
+{
+    new int[] {1, 2, 3, 4},
+    new int[] {11, 34, 67},
+    new int[] {89, 23},
+    new int[] {0, 45, 78, 53, 99}
+};
+
+
+// program of jagged array
+//Jagged array
+        int[][] array = new int[3][];
+        
+        array[0] = new int[]{1,2};
+        array[1] = new int[]{3,4};
+        array[2] =  new int[]{5,6,7};
+        
+        //loop through the array and print
+        for(int i=0; i<array.Length;i++){
+            //rows will get print
+                Console.WriteLine("rows : {0}",i);
+            
+            for(int j = 0; j< array[i].Length;j++){
+                Console.WriteLine(array[i][j]);
+            }
+            Console.WriteLine();
+        }
+
+o/p :
+rows : 0                  {{1,2},{3,4},{5,6,7}}
+1		index :     0      1      2
+2
+
+rows : 1
+3
+4
+
+rows : 2
+5
+6
+7
+
+
+
+
+
+
+
+
+
+
+
+
+
      
     
