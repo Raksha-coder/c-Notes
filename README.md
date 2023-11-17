@@ -5,6 +5,21 @@ ctrl + r = to select multiple word and edit them.
 
 
 
+🤩 Using 
+
+using(WebClient w = new WebClient()){
+
+	string googleMainPage = w.DownloadString("www.google.com");
+ 	Console.WriteLine(googleMainPage);
+
+}
+
+- webclient is abstracting the data(html data) from the web page . it has one interface IDispose which help to absract data.
+- it is a class 
+
+
+
+
 🤩readonly and constant
 - ReadOnly is a runtime constant.
 - Const is a compile time constant.
